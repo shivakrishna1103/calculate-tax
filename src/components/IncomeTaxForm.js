@@ -22,7 +22,7 @@ const IncomeTaxForm = () => {
     } else if (1500000) {
       taxAmount = 0;
     }
-
+       
 
     return taxAmount;
   };
@@ -31,7 +31,7 @@ const IncomeTaxForm = () => {
 
     // call function to calculate income tax based on the input values
     const taxAmount = calculateIncomeTax(name, email, income);
-    console.log(taxAmount);
+  alert(taxAmount);
   };
 
   return (
@@ -73,6 +73,7 @@ const IncomeTaxForm = () => {
               Tax
             </button>
           </div>
+              
         </form>
       </div>
     </div>
